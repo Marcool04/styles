@@ -15,7 +15,7 @@
     <issn>0300-953X</issn>
     <issn>1760-7256</issn>
     <summary>Author, date style, based on the Journal de la société des océanistes (JSO</summary>
-    <updated>2019-12-29T12:01:49+00:00</updated>
+    <updated>2021-02-28T12:01:49+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="fr">
@@ -155,7 +155,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography subsequent-author-substitute="———" entry-spacing="1">
+  <bibliography subsequent-author-substitute="&#8212;" entry-spacing="0" hanging-indent="true">
     <sort>
       <key macro="author"/>
       <key variable="issued"/>
@@ -183,7 +183,6 @@
             <group>
               <text macro="title" font-style="italic"/>
               <text variable="URL" prefix=", "/>
-              <text prefix=" (" macro="access" suffix=")"/>
             </group>
           </else-if>
           <else-if type="article-journal article-magazine article-newspaper post-weblog broadcast personal_communication thesis entry-dictionary entry-encyclopedia paper-conference" match="any">
@@ -201,7 +200,6 @@
                 </if>
                 <else-if match="any" variable="URL">
                   <text variable="URL" prefix=", "/>
-                  <text macro="access" prefix=" (" suffix=")"/>
                 </else-if>
               </choose>
             </group>
@@ -213,7 +211,7 @@
                 <text macro="edition"/>
                 <text macro="publisher"/>
                 <text variable="collection-title"/>
-                <text variable="number-of-pages" suffix=" pages"/>
+                <text variable="number-of-pages" suffix=" pages"/>
               </group>
               <choose>
                 <if match="any" variable="DOI">
@@ -221,7 +219,6 @@
                 </if>
                 <else-if match="any" variable="URL">
                   <text variable="URL" prefix=", "/>
-                  <text macro="access" prefix=" (" suffix=")"/>
                 </else-if>
               </choose>
             </group>
@@ -240,7 +237,6 @@
                 </if>
                 <else-if match="any" variable="URL">
                   <text variable="URL" prefix=", "/>
-                  <text macro="access" prefix=" (" suffix=")"/>
                 </else-if>
               </choose>
             </group>
